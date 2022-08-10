@@ -1,0 +1,100 @@
+{
+  "expenseItems": [
+    {
+      "purchasedOn": "2022-07-21",
+      "nature": "Hotel",
+      "comment": "Pretty good",
+      "originalAmount": {
+        "amount": "122",
+        "currency": "EUR"
+      },
+      "convertedAmount": {
+        "amount": 960,
+        "currency": "EUR"
+      },
+      "createdAt": "2022-07-28T17:12:05.642Z",
+      "lastModifiedAt": "2022-07-28T17:12:05.642Z",
+      "id": "08611e68-1fe5-45f1-969f-fc288d4b0de2"
+    },
+    {
+      "purchasedOn": "2022-07-28",
+      "nature": "Restaurant",
+      "comment": "Dinner with client",
+      "originalAmount": {
+        "amount": "45",
+        "currency": "EUR"
+      },
+      "convertedAmount": {
+        "amount": 960,
+        "currency": "EUR"
+      },
+      "createdAt": "2022-07-28T17:33:01.074Z",
+      "lastModifiedAt": "2022-07-28T17:33:01.074Z",
+      "id": "e40e8e63-67bd-463f-8947-8f751b19f03a"
+    },
+    {
+      "purchasedOn": "2022-07-28",
+      "nature": "Hotel de transylvanie",
+      "comment": "Had to sleep after restaurant with client",
+      "originalAmount": {
+        "amount": "459",
+        "currency": "CHF"
+      },
+      "convertedAmount": {
+        "amount": 960,
+        "currency": "EUR"
+      },
+      "createdAt": "2022-07-28T22:15:01.524Z",
+      "lastModifiedAt": "2022-07-28T22:15:01.524Z",
+      "id": "6a333e62-0cb8-4590-9b08-2788fd62343"
+    },
+    {
+      "purchasedOn": "2022-07-28",
+      "nature": "Flight",
+      "comment": "Paris - London",
+      "originalAmount": {
+        "amount": "459",
+        "currency": "EUR"
+      },
+      "convertedAmount": {
+        "amount": 960,
+        "currency": "EUR"
+      },
+      "createdAt": "2022-07-28T22:15:01.524Z",
+      "lastModifiedAt": "2022-07-28T22:15:01.524Z",
+      "id": "6a333e62-0cb8-4590-9b08-2788fd6f1"
+    },
+    {
+      "purchasedOn": "2022-07-28",
+      "nature": "Taxi",
+      "comment": "London airport to london",
+      "originalAmount": {
+        "amount": "56",
+        "currency": "EUR"
+      },
+      "convertedAmount": {
+        "amount": 960,
+        "currency": "EUR"
+      },
+      "createdAt": "2022-07-28T22:15:01.524Z",
+      "lastModifiedAt": "2022-07-28T22:15:01.524Z",
+      "id": "6a333e62-0cb8-4590-9b08-2788fd6273"
+    },
+    {
+      "purchasedOn": "2022-07-28",
+      "nature": "Big Ben",
+      "comment": "Walk with client to discuss opportunities",
+      "originalAmount": {
+        "amount": "15",
+        "currency": "EUR"
+      },
+      "convertedAmount": {
+        "amount": 960,
+        "currency": "EUR"
+      },
+      "createdAt": "2022-07-28T22:15:01.524Z",
+      "lastModifiedAt": "2022-07-28T22:15:01.524Z",
+      "id": "6a333e62-0cb8-4590-9b08-2788fd6f66233"
+    }
+  ]
+}

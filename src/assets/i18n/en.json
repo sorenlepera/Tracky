@@ -1,0 +1,23 @@
+{
+  "LOCALE": {
+    "DATE": "MM/dd/yyyy"
+  },
+  "HEADER": {
+    "EXPENSE-AMOUNT": "expenses"
+  },
+  "EXPENSE-PAGE": {
+    "NEW-EXPENSE": "New",
+    "MORE": "More"
+  },
+  "EXPENSE-FORM": {
+    "PRICE": "Price",
+    "COMMENT": "Comment",
+    "CONFIRM": "Confirm",
+    "CANCEL": "Cancel"
+  },
+  "EXPENSE": {
+    "EDIT": "Edit",
+    "DELETE": "Delete",
+    "DELETE-ALERT": "Confirm you want to delete !"
+  }
+}

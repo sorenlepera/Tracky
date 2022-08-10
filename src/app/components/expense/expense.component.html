@@ -1,0 +1,30 @@
+<div class="expense-block">
+  <div class="block-title">
+    <p>
+      {{ expense.purchasedOn | date: ("LOCALE.DATE" | translate) }}
+    </p>
+    <p *ngIf="currencyConverted$ | async as converted">
+      {{ converted.result | currency: converted.query.to }}
+    </p>
+  </div>
+  <div class="block-body">
+    <div class="block-nature">
+      <p>{{ expense.nature }}</p>
+      <div>{{ expense.comment }}</div>
+    </div>
+    <div class="expense-buttons">
+      <button
+        mat-raised-button
+        color="primary"
+        class="edit"
+        (click)="editExpense()"
+      >
+        {{ "EXPENSE.EDIT" | translate }}
+      </button>
+      <button mat-raised-button color="primary" (click)="deleteExpense()">
+        {{ "EXPENSE.DELETE" | translate }}
+      </button>
+    </div>
+  </div>
+  <p></p>
+</div>

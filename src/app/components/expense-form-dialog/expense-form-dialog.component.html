@@ -1,0 +1,63 @@
+<form
+  name="expenseForm"
+  #formDirective="ngForm"
+  [formGroup]="expenseForm"
+  (ngSubmit)="expenseForm.valid && onSubmit(expenseForm)"
+>
+  <div class="form-group">
+    <label for="purchasedOn">Date</label>
+    <input
+      type="date"
+      class="form-control input-date"
+      formControlName="purchasedOn"
+      required
+    />
+    <div formGroupName="originalAmount">
+      <label for="amount">{{ "EXPENSE-FORM.PRICE" | translate }}</label>
+      <input
+        type="number"
+        class="form-control"
+        formControlName="amount"
+        required
+      />
+      <select
+        type="text"
+        class="form-control"
+        formControlName="currency"
+        required
+      >
+        <option value="">???</option>
+        <option value="CHF">CHF</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+      </select>
+    </div>
+
+    <label for="nature">Nature</label>
+    <textarea
+      type="textarea"
+      class="nature"
+      formControlName="nature"
+      required
+    ></textarea>
+    <label for="comment">{{ "EXPENSE-FORM.COMMENT" | translate }}</label>
+    <textarea type="textarea" formControlName="comment" required></textarea>
+
+    <div class="form-group button-group">
+      <button
+        mat-raised-button
+        mat-dialog-close
+        class="btn btn-primary"
+        type="submit"
+        [disabled]="!expenseForm.valid"
+      >
+        {{ "EXPENSE-FORM.CONFIRM" | translate }}
+      </button>
+
+      <button mat-raised-button mat-dialog-close color="primary">
+        {{ "EXPENSE-FORM.CANCEL" | translate }}
+      </button>
+    </div>
+  </div>
+</form>

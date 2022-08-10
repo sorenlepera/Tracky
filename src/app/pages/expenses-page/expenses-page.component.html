@@ -1,0 +1,36 @@
+<app-header [expensesAmount]="expenseAmount$ | async"></app-header>
+
+<div class="actions">
+  <button mat-raised-button color="primary" (click)="openDialog()">
+    {{ "EXPENSE-PAGE.NEW-EXPENSE" | translate }}
+  </button>
+  <div>
+    <mat-button-toggle-group
+      (change)="translate.use($event.value)"
+      [value]="translate.getBrowserLang()"
+    >
+      <mat-button-toggle
+        color="primary"
+        *ngFor="let lang of translate.getLangs()"
+        value="{{ lang }}"
+        >{{ lang }}</mat-button-toggle
+      >
+    </mat-button-toggle-group>
+  </div>
+</div>
+
+<app-expense
+  app-expense
+  *ngFor="let expense of expenses$ | async; trackBy: trackById"
+  [expense]="expense"
+  (deleteExpenseEvent)="deleteExpense($event)"
+></app-expense>
+
+<div
+  class="center"
+  *ngIf="(expenseAmount$ | async) != (expenses$ | async)?.length"
+>
+  <button mat-raised-button (click)="fetchMoreExpense()">
+    {{ "EXPENSE-PAGE.MORE" | translate }}
+  </button>
+</div>

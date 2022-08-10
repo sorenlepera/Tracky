@@ -1,0 +1,12 @@
+.center {
+  text-align: center;
+}
+
+button {
+  margin: 1em;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
